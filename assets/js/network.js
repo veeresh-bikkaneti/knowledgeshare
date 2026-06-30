@@ -127,10 +127,24 @@
     }
   }
 
+  var running = false;
+
   function animate() {
+    if (!running) return;
     update();
     draw();
     animFrame = requestAnimationFrame(animate);
+  }
+
+  function stop() {
+    running = false;
+    if (animFrame) cancelAnimationFrame(animFrame);
+  }
+
+  function start() {
+    if (running) return;
+    running = true;
+    animate();
   }
 
   // Event listeners
@@ -161,14 +175,17 @@
   }
 
   init();
-  animate();
+  start();
 
   // Pause animation when tab is hidden to prevent memory leak
   document.addEventListener('visibilitychange', function() {
     if (document.hidden) {
-      if (animFrame) cancelAnimationFrame(animFrame);
+      stop();
     } else {
-      animate();
+      start();
     }
   });
+
+  // Cleanup on page unload
+  window.addEventListener('beforeunload', stop);
 })();
