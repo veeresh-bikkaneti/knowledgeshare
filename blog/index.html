@@ -3,10 +3,11 @@ layout: default
 title: Blog
 ---
 
-<section class="mb-3">
+<section class="mb-3 section">
   <div class="section-header">
     <i class="fas fa-rss"></i>
     <span>Blog</span>
+    <span class="section-number">01</span>
     <div class="section-divider"></div>
   </div>
   <p class="blog-intro">
@@ -16,7 +17,7 @@ title: Blog
 
 <div class="posts-grid">
   {% for post in site.posts %}
-  <article class="post-card">
+  <article class="post-card" data-reveal>
     <div class="post-card-meta">
       <span><i class="fas fa-calendar-alt"></i> {{ post.date | date: "%b %d, %Y" }}</span>
       {% if post.reading_time %}

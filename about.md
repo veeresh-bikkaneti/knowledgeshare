@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-<section class="about-hero">
+<section class="about-hero" data-reveal>
   <div>
     <img src="https://github.com/veeresh-bikkaneti.png" alt="Veeresh Bikkaneti" class="about-avatar">
   </div>
@@ -27,14 +27,15 @@ title: About
   </div>
 </section>
 
-<section class="skills-section">
+<section class="skills-section section">
   <div class="section-header">
     <i class="fas fa-code"></i>
     <span>Core Competencies</span>
+    <span class="section-number">01</span>
     <div class="section-divider"></div>
   </div>
   <div class="skills-grid">
-    <div class="skill-category">
+    <div class="skill-category" data-reveal>
       <h3><i class="fas fa-robot"></i> AI & Quality Architecture</h3>
       <ul class="skill-list">
         <li>AI-Driven Test Strategy</li>
@@ -48,7 +49,7 @@ title: About
         <li>Domain-Driven Design (DDD)</li>
       </ul>
     </div>
-    <div class="skill-category">
+    <div class="skill-category" data-reveal>
       <h3><i class="fas fa-users"></i> Agile & Product Leadership</h3>
       <ul class="skill-list">
         <li>Product Ownership</li>
@@ -60,7 +61,7 @@ title: About
         <li>ROI Analysis / Value-Effort Scoring</li>
       </ul>
     </div>
-    <div class="skill-category">
+    <div class="skill-category" data-reveal>
       <h3><i class="fas fa-cogs"></i> Automation Frameworks</h3>
       <ul class="skill-list">
         <li>Cypress (TypeScript/JavaScript)</li>
@@ -72,7 +73,7 @@ title: About
         <li>xUnit / MSTest / NUnit / TestNG / JUnit</li>
       </ul>
     </div>
-    <div class="skill-category">
+    <div class="skill-category" data-reveal>
       <h3><i class="fas fa-server"></i> CI/CD, DevOps & Infra</h3>
       <ul class="skill-list">
         <li>Azure Pipelines / Azure DevOps</li>
@@ -82,7 +83,7 @@ title: About
         <li>Azure App Configuration / Monitoring</li>
       </ul>
     </div>
-    <div class="skill-category">
+    <div class="skill-category" data-reveal>
       <h3><i class="fas fa-laptop-code"></i> Programming & Data</h3>
       <ul class="skill-list">
         <li>TypeScript / JavaScript</li>
@@ -93,7 +94,7 @@ title: About
         <li>MSSQL / Informix / DB2</li>
       </ul>
     </div>
-    <div class="skill-category">
+    <div class="skill-category" data-reveal>
       <h3><i class="fas fa-shield-alt"></i> Governance & Compliance</h3>
       <ul class="skill-list">
         <li>SOX ITGC / FERPA / NAIC</li>
@@ -107,13 +108,14 @@ title: About
   </div>
 </section>
 
-<section class="experience-section">
+<section class="experience-section section">
   <div class="section-header">
     <i class="fas fa-briefcase"></i>
     <span>Experience</span>
+    <span class="section-number">02</span>
     <div class="section-divider"></div>
   </div>
-  <div class="experience-card">
+  <div class="experience-card" data-reveal>
     <h3>FM Global (Factory Mutual)</h3>
     <p class="company">Principal QA Architect, Quality Enablement · Sep 2024 – Present</p>
     <p>One of the world's largest commercial property insurers. Leading enterprise quality architecture and strategy for multi-million-dollar property risk management products.</p>
@@ -127,7 +129,7 @@ title: About
       <li>Implemented SOX ITGC and NAIC-aligned traceability framework</li>
     </ul>
   </div>
-  <div class="experience-card">
+  <div class="experience-card" data-reveal>
     <h3>Utah State Board of Education (USBE) — USIMS Modernization ($22.9M)</h3>
     <p class="company">Principal SDET Lead / Business Analyst · Oct 2021 – Sep 2024</p>
     <p>Led QA vision, automation strategy, and BA delivery for Utah's $22.9M statewide K-12 education data modernization across 6+ state agencies.</p>
@@ -138,7 +140,7 @@ title: About
       <li>Facilitated JAD sessions; translated state regulatory requirements into sprint-ready stories with FERPA traceability</li>
     </ul>
   </div>
-  <div class="experience-card">
+  <div class="experience-card" data-reveal>
     <h3>Global Medical Response (GMR) — Access2Care NEMT Platform</h3>
     <p class="company">Principal SDET Lead / Business Analyst · Oct 2021 – Sep 2024</p>
     <p>Led QA and BA for Access2Care's non-emergency medical transportation Online Ordering platform.</p>
@@ -148,7 +150,7 @@ title: About
       <li>Identified 15+ accessibility issues pre-launch via WCAG-focused test reviews</li>
     </ul>
   </div>
-  <div class="experience-card">
+  <div class="experience-card" data-reveal>
     <h3>WERNER Enterprises</h3>
     <p class="company">Product Owner / Principal SDET Architect · Aug 2018 – Jul 2021</p>
     <p>Top-5 North American freight carrier. Dual role as QA Architect and Product Owner across 6+ product lines.</p>
@@ -160,14 +162,15 @@ title: About
   </div>
 </section>
 
-<section class="experience-section">
+<section class="experience-section section">
   <div class="section-header">
     <i class="fas fa-folder-open"></i>
     <span>Open Source Projects</span>
+    <span class="section-number">03</span>
     <div class="section-divider"></div>
   </div>
   <div class="bento-grid">
-    <article class="bento-card bento-card--featured">
+    <article class="bento-card bento-card--featured" data-reveal>
       <div class="bento-header">
         <div class="bento-icon"><i class="fas fa-robot"></i></div>
         <h3 class="bento-title"><a href="https://github.com/veeresh-bikkaneti/cypress-qa-ai-workforce" target="_blank">cypress-qa-ai-workforce</a></h3>
@@ -180,15 +183,15 @@ title: About
         <span class="bento-tag">Playwright</span>
       </div>
     </article>
-    <article class="bento-card bento-card--stat">
+    <article class="bento-card bento-card--stat" data-reveal>
       <div class="bento-stat-value">4</div>
       <div class="bento-stat-label">Repos</div>
     </article>
-    <article class="bento-card bento-card--stat">
+    <article class="bento-card bento-card--stat" data-reveal>
       <div class="bento-stat-value">AI</div>
       <div class="bento-stat-label">Focus</div>
     </article>
-    <article class="bento-card">
+    <article class="bento-card" data-reveal>
       <div class="bento-header">
         <div class="bento-icon"><i class="fas fa-brain"></i></div>
         <h3 class="bento-title"><a href="https://github.com/veeresh-bikkaneti/LLMcouncil" target="_blank">LLMcouncil</a></h3>
@@ -200,7 +203,7 @@ title: About
         <span class="bento-tag">Multi-Agent</span>
       </div>
     </article>
-    <article class="bento-card">
+    <article class="bento-card" data-reveal>
       <div class="bento-header">
         <div class="bento-icon"><i class="fas fa-plug"></i></div>
         <h3 class="bento-title"><a href="https://github.com/veeresh-bikkaneti/azdo-ai-toolkit" target="_blank">azdo-ai-toolkit</a></h3>
@@ -212,7 +215,7 @@ title: About
         <span class="bento-tag">AI</span>
       </div>
     </article>
-    <article class="bento-card bento-card--wide">
+    <article class="bento-card bento-card--wide" data-reveal>
       <div class="bento-header">
         <div class="bento-icon"><i class="fas fa-exchange-alt"></i></div>
         <h3 class="bento-title"><a href="https://github.com/veeresh-bikkaneti/cypress-playwright" target="_blank">cypress-playwright</a></h3>
@@ -225,7 +228,7 @@ title: About
         <span class="bento-tag">Migration</span>
       </div>
     </article>
-    <article class="bento-card">
+    <article class="bento-card" data-reveal>
       <div class="bento-header">
         <div class="bento-icon"><i class="fas fa-pen-nib"></i></div>
         <h3 class="bento-title"><a href="https://medium.com/@veeresh.esh" target="_blank">Medium — letsautomate</a></h3>
@@ -245,81 +248,84 @@ title: About
   <div class="section-header">
     <i class="fas fa-certificate"></i>
     <span>Certifications</span>
+    <span class="section-number">04</span>
     <div class="section-divider"></div>
   </div>
   <div class="certs-grid">
-    <div class="cert-card">
+    <div class="cert-card" data-reveal>
       <h3><i class="fas fa-award"></i> Professional Scrum Master</h3>
       <p class="cert-issuer">Scrum.org · License: 507790</p>
     </div>
-    <div class="cert-card">
+    <div class="cert-card" data-reveal>
       <h3><i class="fas fa-award"></i> Postman API Fundamentals</h3>
       <p class="cert-issuer">Postman · Apr 2024</p>
     </div>
-    <div class="cert-card">
+    <div class="cert-card" data-reveal>
       <h3><i class="fas fa-award"></i> BDD with SpecFlow Masterclass</h3>
       <p class="cert-issuer">Jul 2023</p>
     </div>
-    <div class="cert-card">
+    <div class="cert-card" data-reveal>
       <h3><i class="fas fa-award"></i> Six Sigma Yellow Belt</h3>
       <p class="cert-issuer">MACOBIE · ID: 001102</p>
     </div>
-    <div class="cert-card">
+    <div class="cert-card" data-reveal>
       <h3><i class="fas fa-award"></i> Scrum Master Accredited</h3>
       <p class="cert-issuer">scrum-institute.org · ID: 46016682849265</p>
     </div>
-    <div class="cert-card">
+    <div class="cert-card" data-reveal>
       <h3><i class="fas fa-award"></i> Accredited Software Test Automator</h3>
       <p class="cert-issuer">test-institute.org · ID: 42070465481374</p>
     </div>
   </div>
 </section>
 
-<section class="mt-3">
+<section class="mt-3 section">
   <div class="section-header">
     <i class="fas fa-graduation-cap"></i>
     <span>Education</span>
+    <span class="section-number">05</span>
     <div class="section-divider"></div>
   </div>
-  <div class="experience-card">
+  <div class="experience-card" data-reveal>
     <h3>M.S. Computer Science</h3>
     <p class="company">Wilmington University, Delaware, USA · 2018</p>
   </div>
-  <div class="experience-card">
+  <div class="experience-card" data-reveal>
     <h3>MBA</h3>
     <p class="company">Calorx Teacher's University, Gujarat, India · 2012</p>
   </div>
-  <div class="experience-card">
+  <div class="experience-card" data-reveal>
     <h3>B.S. Computer Science</h3>
     <p class="company">Osmania University, India · 2005</p>
   </div>
 </section>
 
-<section class="mt-3">
+<section class="mt-3 section">
   <div class="section-header">
     <i class="fas fa-envelope"></i>
     <span>Get in Touch</span>
+    <span class="section-number">06</span>
     <div class="section-divider"></div>
   </div>
   <div class="contact-section">
     <p class="contact-intro">Interested in collaborating on QA architecture, test automation strategy, or AI-driven quality engineering? I'm always open to discussing new opportunities and ideas.</p>
     <div class="contact-grid">
-      <a href="mailto:resume.qasdet@gmail.com" class="contact-card">
+      <a href="mailto:resume.qasdet@gmail.com" class="contact-card" data-reveal>
         <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
         <div class="contact-card-label">Email</div>
         <div class="contact-card-value">resume.qasdet@gmail.com</div>
       </a>
-      <a href="https://www.linkedin.com/in/sdetbaveer/" target="_blank" class="contact-card">
+      <a href="https://www.linkedin.com/in/sdetbaveer/" target="_blank" class="contact-card" data-reveal>
         <div class="contact-card-icon"><i class="fab fa-linkedin"></i></div>
         <div class="contact-card-label">LinkedIn</div>
         <div class="contact-card-value">sdetbaveer</div>
       </a>
-      <a href="https://github.com/veeresh-bikkaneti" target="_blank" class="contact-card">
+      <a href="https://github.com/veeresh-bikkaneti" target="_blank" class="contact-card" data-reveal>
         <div class="contact-card-icon"><i class="fab fa-github"></i></div>
         <div class="contact-card-label">GitHub</div>
         <div class="contact-card-value">veeresh-bikkaneti</div>
       </a>
-      <a href="https://medium.com/@veeresh.esh" target="_blank" class="contact-card">
+      <a href="https://medium.com/@veeresh.esh" target="_blank" class="contact-card" data-reveal>
         <div class="contact-card-icon"><i class="fab fa-medium"></i></div>
         <div class="contact-card-label">Medium</div>
         <div class="contact-card-value">@veeresh.esh</div>
