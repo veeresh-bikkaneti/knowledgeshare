@@ -995,6 +995,96 @@ body::before {
 .footer-text { color: var(--text-muted); font-size: 0.85rem; }
 
 /* ============================================
+   RESUME SUMMARY — Professional summary card
+   ============================================ */
+.resume-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 2rem 2.25rem;
+  margin-bottom: 3rem;
+  backdrop-filter: blur(8px);
+}
+.resume-summary p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+.resume-summary p strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ============================================
+   HIGHLIGHTS — Career achievements grid
+   ============================================ */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.highlight-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s var(--ease-out);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+.highlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gradient-hero);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out);
+}
+.highlight-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+  background: var(--bg-elevated);
+}
+.highlight-card:hover::before { opacity: 1; }
+.highlight-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-light);
+  font-size: 1.1rem;
+  margin: 0 auto 0.75rem;
+  transition: all 0.3s var(--ease-out);
+}
+.highlight-card:hover .highlight-icon {
+  background: var(--accent-glow);
+  transform: scale(1.1);
+}
+.highlight-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+.highlight-label {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+/* ============================================
    RESPONSIVE — Mobile-first adjustments
    ============================================ */
 @media (max-width: 900px) {

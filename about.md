@@ -10,28 +10,70 @@ title: About
   <div class="about-info">
     <h1>Veeresh Bikkaneti</h1>
     <p class="subtitle">Principal QA Architect · AI Test Architect · Product Owner · Scrum Master</p>
-    <div class="bio">
-      <p>
-        Principal QA Architect and Agile Delivery Leader with 20+ years driving enterprise software quality across property insurance, government education, healthcare, and logistics. Dual-threaded expertise: Product Owner / Business Analyst on the strategy side; Principal Test Architect / SDET Lead on the engineering side.
-      </p>
-      <p>
-        Proven track record leading blended onshore/offshore teams of 8–12, orchestrating SAFe PI Planning, architecting AI-driven test frameworks, and owning quality strategy for multi-million-dollar programs. Established Centers of Excellence, pioneered AI-assisted test generation, and consistently delivered measurable outcomes: 35–40% efficiency gains, 95% API coverage, 60% faster test execution.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:resume.qasdet@gmail.com"><i class="fas fa-envelope"></i> resume.qasdet@gmail.com</a>
-        <a href="https://www.linkedin.com/in/sdetbaveer/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/veeresh-bikkaneti" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://medium.com/@veeresh.esh" target="_blank"><i class="fab fa-medium"></i> Medium</a>
-      </div>
+    <div class="contact-links">
+      <a href="mailto:resume.qasdet@gmail.com"><i class="fas fa-envelope"></i> resume.qasdet@gmail.com</a>
+      <a href="https://www.linkedin.com/in/sdetbaveer/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/veeresh-bikkaneti" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://medium.com/@veeresh.esh" target="_blank"><i class="fab fa-medium"></i> Medium</a>
     </div>
   </div>
 </section>
 
+<!-- Professional Summary -->
+<section class="resume-summary" data-reveal>
+  <p>
+    <strong>Principal QA Architect</strong> and <strong>Agile Delivery Leader</strong> with 20+ years driving enterprise software quality across property insurance, government education, healthcare, and logistics. Dual-threaded expertise: Product Owner / Business Analyst on the strategy side; Principal Test Architect / SDET Lead on the engineering side. Proven track record leading blended onshore/offshore teams of 8–12, orchestrating SAFe PI Planning, architecting AI-driven test frameworks, and owning quality strategy for multi-million-dollar programs. Established Centers of Excellence, pioneered AI-assisted test generation, and consistently delivered measurable outcomes: <strong>35–40% efficiency gains</strong>, <strong>95% API coverage</strong>, <strong>60% faster test execution</strong>.
+  </p>
+</section>
+
+<!-- Career Highlights -->
+<section class="section">
+  <div class="section-header">
+    <i class="fas fa-trophy"></i>
+    <span>Career Highlights</span>
+    <span class="section-number">01</span>
+    <div class="section-divider"></div>
+  </div>
+  <div class="highlights-grid">
+    <div class="highlight-card" data-reveal>
+      <div class="highlight-icon"><i class="fas fa-rocket"></i></div>
+      <div class="highlight-value">35–40%</div>
+      <div class="highlight-label">Release Reliability Improvement</div>
+    </div>
+    <div class="highlight-card" data-reveal>
+      <div class="highlight-icon"><i class="fas fa-bolt"></i></div>
+      <div class="highlight-value">60%</div>
+      <div class="highlight-label">Faster Test Execution</div>
+    </div>
+    <div class="highlight-card" data-reveal>
+      <div class="highlight-icon"><i class="fas fa-shield-alt"></i></div>
+      <div class="highlight-value">95%</div>
+      <div class="highlight-label">API Coverage — Critical Flows</div>
+    </div>
+    <div class="highlight-card" data-reveal>
+      <div class="highlight-icon"><i class="fas fa-clock"></i></div>
+      <div class="highlight-value">30%</div>
+      <div class="highlight-label">Reduction in Sprint Planning Overhead</div>
+    </div>
+    <div class="highlight-card" data-reveal>
+      <div class="highlight-icon"><i class="fas fa-server"></i></div>
+      <div class="highlight-value">40%</div>
+      <div class="highlight-label">Environment Reliability Gain (Docker)</div>
+    </div>
+    <div class="highlight-card" data-reveal>
+      <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="highlight-value">80%</div>
+      <div class="highlight-label">Test Performance Improvement (Playwright)</div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Competencies -->
 <section class="skills-section section">
   <div class="section-header">
     <i class="fas fa-code"></i>
     <span>Core Competencies</span>
-    <span class="section-number">01</span>
+    <span class="section-number">02</span>
     <div class="section-divider"></div>
   </div>
   <div class="skills-grid">
@@ -108,11 +150,12 @@ title: About
   </div>
 </section>
 
+<!-- Professional Experience -->
 <section class="experience-section section">
   <div class="section-header">
     <i class="fas fa-briefcase"></i>
     <span>Experience</span>
-    <span class="section-number">02</span>
+    <span class="section-number">03</span>
     <div class="section-divider"></div>
   </div>
   <div class="experience-card" data-reveal>
@@ -162,11 +205,12 @@ title: About
   </div>
 </section>
 
+<!-- Open Source Projects -->
 <section class="experience-section section">
   <div class="section-header">
     <i class="fas fa-folder-open"></i>
     <span>Open Source Projects</span>
-    <span class="section-number">03</span>
+    <span class="section-number">04</span>
     <div class="section-divider"></div>
   </div>
   <div class="bento-grid">
@@ -244,11 +288,12 @@ title: About
   </div>
 </section>
 
+<!-- Certifications -->
 <section>
   <div class="section-header">
     <i class="fas fa-certificate"></i>
     <span>Certifications</span>
-    <span class="section-number">04</span>
+    <span class="section-number">05</span>
     <div class="section-divider"></div>
   </div>
   <div class="certs-grid">
@@ -279,11 +324,12 @@ title: About
   </div>
 </section>
 
+<!-- Education -->
 <section class="mt-3 section">
   <div class="section-header">
     <i class="fas fa-graduation-cap"></i>
     <span>Education</span>
-    <span class="section-number">05</span>
+    <span class="section-number">06</span>
     <div class="section-divider"></div>
   </div>
   <div class="experience-card" data-reveal>
@@ -300,11 +346,12 @@ title: About
   </div>
 </section>
 
+<!-- Get in Touch -->
 <section class="mt-3 section">
   <div class="section-header">
     <i class="fas fa-envelope"></i>
     <span>Get in Touch</span>
-    <span class="section-number">06</span>
+    <span class="section-number">07</span>
     <div class="section-divider"></div>
   </div>
   <div class="contact-section">
