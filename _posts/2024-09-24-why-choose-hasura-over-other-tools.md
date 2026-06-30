@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Choose Hasura Over Other GraphQL Tools?"
-date: 2026-06-06
+date: 2024-09-24
 categories: [automation, best-practices]
 tags: [graphql, hasura, dotnet, api, sql, real-time]
 excerpt: "Combining Hasura, GraphQL, and Hot Chocolate can lead to powerful and efficient solutions for various applications. Here are some notable use cases:"
