@@ -19,3 +19,6 @@ Thumbs.db
 .agents/
 AGENTS.md
 knowledge.md
+
+# Node (not a Node project)
+package-lock.json
