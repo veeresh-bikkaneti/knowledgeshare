@@ -15,6 +15,18 @@ highlighter: rouge
 permalink: /:categories/:title/
 include:
   - .nojekyll
+# Exclude dev artifacts (also in .gitignore) from the public build output.
+# Without this, Jekyll copies everything in the project root into _site/,
+# which would leak the Karpathy-orchestrator spec and the project's local
+# memory file to https://veeresh-bikkaneti.github.io/knowledgeshare/AGENTS.md.
+exclude:
+  - AGENTS.md
+  - knowledge.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - README.md
 
 kramdown:
   input: GFM
