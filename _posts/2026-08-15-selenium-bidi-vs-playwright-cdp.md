@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automating Complex Interactions in 2026: Selenium BiDi vs. Playwright CDP"
-date: 2026-08-15
+date: 2026-07-01
 categories: [automation, tools]
 tags: [selenium, playwright, bidi, cdp, drag-and-drop, network-interception, ai-testing, beginners, csharp, java, typescript, javascript, python]
 excerpt: "Head-to-head comparison of Selenium WebDriver BiDi and Playwright's native CDP — drag-and-drop, network interception, and AI-powered interaction replay for beginners."
