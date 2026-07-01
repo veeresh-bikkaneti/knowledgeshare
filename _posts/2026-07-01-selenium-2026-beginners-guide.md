@@ -5,7 +5,7 @@ date: 2026-07-01
 categories: [automation, tools]
 tags: [selenium, webdriver-bidi, mcp, ai-testing, beginners, csharp, python, javascript]
 excerpt: "Everything a beginner needs to start browser automation with Selenium in 2026 — from zero-code setup to running an AI agent that controls your browser for you."
-reading_time: 10
+reading_time: 11
 ---
 
 If you're new to test automation, Selenium is still the best place to start. It runs everywhere, speaks every language, and — as of 2026 — it has a built-in AI superpower: the **Model Context Protocol (MCP)**.
@@ -213,7 +213,7 @@ This is where Selenium in 2026 gets genuinely exciting. **MCP (Model Context Pro
 ```
 You type:     "Fill the registration form with valid test data"
                ↓
-AI Agent:     Parses intent → calls MCP tool "selenium_fill_form"
+AI Agent:     Parses intent → calls MCP tools (interact + send_keys)
                ↓
 MCP Server:   Translates → driver.FindElement(...).SendKeys(...)
                ↓
@@ -222,41 +222,48 @@ Browser:      Form fields populate
 MCP Server:   Returns screenshot → AI confirms it looks correct
 ```
 
+### The Original Selenium MCP Server
+
+The first — and still most popular — Selenium MCP server was built by **Angie Jones** ([@angiejones/mcp-selenium](https://github.com/angiejones/mcp-selenium)). Angie is a well-known figure in the test automation community (ex-Applittools, ex-Test Automation University), and her `mcp-selenium` project was the proof-of-concept that showed the world AI agents could drive real browsers through Selenium.
+
+Why it caught on:
+
+- **Zero config** — runs via `npx`, no Python dependency, no virtual environment
+- **Comprehensive tools** — goes beyond basic navigation to expose WebDriver BiDi diagnostics, accessibility tree snapshots, JavaScript execution, iframe management, alert handling, and cookie manipulation
+- **Accessibility-first** — the `accessibility://current` resource gives the AI a compact, structured JSON tree of interactive elements so it can "see" the page without parsing raw HTML
+- **Actively maintained** — regular releases through 2026, widely cited in guides from mcp.directory, Block's Goose, and Claude Code
+
 ### Setup (5 Minutes)
 
 **Prerequisite:** You have Selenium installed from Step 1.
 
-**1. Install the Selenium MCP package:**
+**1. Register the MCP server with your AI agent — no install step needed.**
 
-```bash
-# Python (most common for MCP servers)
-pip install selenium-mcp
-
-# Or Node.js
-npm install @anthropic/selenium-mcp-server
-```
-
-**2. Register the MCP server with your AI agent.**
+Angie's `mcp-selenium` runs directly via `npx` (Node.js package runner). The AI agent downloads and launches it on demand:
 
 For Claude Desktop, edit `claude_desktop_config.json`:
+- **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+- **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "selenium": {
-      "command": "python",
-      "args": ["-m", "selenium_mcp", "--browser", "chrome"],
+      "command": "npx",
+      "args": ["-y", "@angiejones/mcp-selenium@latest"],
       "env": {
-        "SELENIUM_HEADLESS": "false"
+        "SELENIUM_BROWSER": "chrome"
       }
     }
   }
 }
 ```
 
-**3. Restart Claude Desktop. You'll see a new 🔌 icon — Selenium is connected.**
+> **Alternative (Python):** If you prefer Python, the `selenium-mcp` package (`pip install selenium-mcp`) offers a similar experience. But `@angiejones/mcp-selenium` remains the canonical implementation — it was first, has the largest toolset, and is what most tutorials reference.
 
-**4. Start talking to your browser:**
+**2. Restart Claude Desktop. You'll see a new 🔌 icon — Selenium is connected.**
+
+**3. Start talking to your browser:**
 
 ```
 You:    "Go to https://the-internet.herokuapp.com/login and fill in
@@ -281,14 +288,17 @@ flowchart LR
 
 ### What You Can Ask the AI Agent to Do
 
-| Task | Natural-language prompt |
-|------|------------------------|
-| Navigate | "Go to our staging site at https://staging.example.com" |
-| Fill forms | "Fill the signup form with name 'Test User', email 'test@example.com'" |
-| Assertions | "Is the dashboard showing 3 active projects?" |
-| Screenshots | "Take a screenshot of the error state" |
-| Network check | "Tell me if any API call returned a 500 after submitting the form" |
-| Accessibility | "Check if every image on the page has alt text" |
+| Task | Natural-language prompt | Underlying mcp-selenium tool |
+|------|------------------------|------------------------------|
+| Navigate | "Go to our staging site at https://staging.example.com" | `navigate` |
+| Fill forms | "Fill the signup form with name 'Test User', email 'test@example.com'" | `interact` + `send_keys` |
+| Assertions | "Is the dashboard showing 3 active projects?" | `get_element_text` |
+| Screenshots | "Take a screenshot of the error state" | `take_screenshot` |
+| Network check | "Tell me if any API call returned a 500 after submitting the form" | `diagnostics` (WebDriver BiDi) |
+| Accessibility | "Check if every image on the page has alt text" | `accessibility://current` resource — structured JSON snapshot of all interactive elements |
+| JavaScript | "What's the value of `window.__INITIAL_STATE__`?" | `execute_script` |
+| Cookies | "Clear the session cookie and verify it redirects to login" | `get_cookies` / `delete_cookie` |
+| Alerts | "Handle the 'Are you sure?' browser dialog and confirm" | `alert` |
 
 You're no longer writing `driver.FindElement()` line-by-line. You describe the **outcome** you want, and the AI + MCP server figure out the *how*.
 
