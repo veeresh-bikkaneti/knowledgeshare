@@ -3,7 +3,7 @@ layout: post
 title: "Mastering GraphQL: Key Concepts and Best Practices for Modern APIs"
 date: 2024-09-25
 categories: [best-practices, frameworks]
-tags: [graphql, api, schema, resolvers, mutations, subscriptions, jwt]
+tags: [graphql, api, schema, resolvers, mutations, subscriptions, jwt, java, javascript]
 excerpt: "GraphQL is a query language for APIs and a runtime for executing those queries. It allows clients to request exactly the data they need, making it more efficient than traditional REST APIs. An API (Application Programming Interface) is a set of rules that allows different..."
 reading_time: 8
 ---

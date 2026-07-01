@@ -3,7 +3,7 @@ layout: post
 title: "AI-Driven Test Strategy: From Copilot to Multi-Agent Orchestration"
 date: 2026-06-29
 categories: [best-practices, frameworks]
-tags: [ai-testing, copilot, multi-agent, test-generation, playwright, cypress]
+tags: [ai-testing, copilot, multi-agent, test-generation, playwright, cypress, typescript]
 excerpt: "How I evolved from GitHub Copilot autocomplete to building multi-agent AI systems that generate, execute, and self-heal test suites autonomously."
 reading_time: 6
 ---

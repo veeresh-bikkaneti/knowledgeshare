@@ -3,7 +3,7 @@ layout: post
 title: "Selenium Page Locator Strategies and NoSuchElementException"
 date: 2020-05-30
 categories: [automation, tools]
-tags: [selenium, locators, xpath, css-selectors, webdriver, no-such-element]
+tags: [selenium, locators, xpath, css-selectors, webdriver, no-such-element, java]
 excerpt: "A beginner-friendly guide to Selenium locator strategies — ID, class, CSS, XPath — and how to avoid NoSuchElementException."
 reading_time: 4
 ---

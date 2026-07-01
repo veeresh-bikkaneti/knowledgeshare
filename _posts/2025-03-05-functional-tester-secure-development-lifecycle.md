@@ -3,7 +3,7 @@ layout: post
 title: "The Role of a Functional Tester in the Secure Development Lifecycle"
 date: 2025-03-05
 categories: [security, best-practices]
-tags: [security-testing, sdlc, shift-left, owasp, functional-testing]
+tags: [security-testing, sdlc, shift-left, owasp, functional-testing, java, typescript, javascript]
 excerpt: "How functional testers contribute to application security across every phase of the SDLC — from requirements to operations."
 reading_time: 3
 ---
