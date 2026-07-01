@@ -474,7 +474,7 @@ This post is the 2026 Playwright refresh that connects to four earlier articles 
 
 1. [Playwright Documentation](https://playwright.dev/docs/intro) — official guides, API references, and best practices for all languages
 2. [Playwright for .NET](https://playwright.dev/dotnet/docs/intro) — C#-specific API reference used in this post's code examples
-3. [@playwright/mcp on npm](https://www.npmjs.com/package/@playwright/mcp) — the official Playwright MCP server package
+3. [microsoft/playwright-mcp on GitHub](https://github.com/microsoft/playwright-mcp) — the official Playwright MCP server, installable via `npx @playwright/mcp`
 4. [Model Context Protocol Specification](https://modelcontextprotocol.io/) — the open protocol that enables AI agents to control browsers and other tools
 
 ## What to Do Next
