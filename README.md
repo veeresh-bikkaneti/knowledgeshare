@@ -2,7 +2,7 @@
 
 A personal tech blog and portfolio site for **Veeresh Bikkaneti** — Principal QA Architect | AI Test Architect | Product Owner | Scrum Master with 20+ years in enterprise quality engineering.
 
-🌐 **Live Site:** [veeresh-bikkaneti.github.io/knowledgeshare](https://veeresh-bikkaneti.github.io/knowledgeshare/)
+🌐 **Live Site:** [veeresh-bikkaneti.github.io/techtalkwith-veeresh](https://veeresh-bikkaneti.github.io/techtalkwith-veeresh/)
 
 ---
 
@@ -81,8 +81,8 @@ portfolio-manager → review-agent → seo-optimizer
 
 ```bash
 # Clone the repository
-git clone https://github.com/veeresh-bikkaneti/knowledgeshare.git
-cd knowledgeshare
+git clone https://github.com/veeresh-bikkaneti/techtalkwith-veeresh.git
+cd techtalkwith-veeresh
 
 # Install dependencies
 bundle install
@@ -180,7 +180,7 @@ Then, on every push to `main`:
 
 1. Push to `main` branch
 2. GitHub Actions builds the Jekyll site
-3. Deploys to GitHub Pages at `https://veeresh-bikkaneti.github.io/knowledgeshare/` — canonical production URL (project path; no custom domain)
+3. Deploys to GitHub Pages at `https://veeresh-bikkaneti.github.io/techtalkwith-veeresh/` — canonical production URL (project path; no custom domain)
 
 ---
 

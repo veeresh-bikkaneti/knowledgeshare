@@ -3,10 +3,10 @@ title: "Tech Talk with Veeresh"
 description: "Principal QA Architect · AI Test Architect · 20+ Years in Enterprise Quality Engineering. AI-driven test strategy, automation frameworks, and software quality insights."
 
 # Production URL: served from the GitHub Pages project path (no custom domain).
-# url + baseurl together form https://veeresh-bikkaneti.github.io/knowledgeshare/.
+# url + baseurl together form https://veeresh-bikkaneti.github.io/techtalkwith-veeresh/.
 # An earlier veeresh.is-a.dev custom-domain plan was abandoned because the DNS server setup was not successful (the upstream is-a-dev/register PR was never filed).
 url: "https://veeresh-bikkaneti.github.io"
-baseurl: "/knowledgeshare"
+baseurl: "/techtalkwith-veeresh"
 author: "Veeresh Bikkaneti"
 
 # Build Settings
@@ -18,7 +18,7 @@ include:
 # Exclude dev artifacts (also in .gitignore) from the public build output.
 # Without this, Jekyll copies everything in the project root into _site/,
 # which would leak the Karpathy-orchestrator spec and the project's local
-# memory file to https://veeresh-bikkaneti.github.io/knowledgeshare/AGENTS.md.
+# memory file to https://veeresh-bikkaneti.github.io/techtalkwith-veeresh/AGENTS.md.
 exclude:
   - AGENTS.md
   - knowledge.md

@@ -314,7 +314,7 @@ flowchart TD
 
 ## Where Existing Posts on This Blog Fit
 
-This post is the 2026 refresh that connects to four earlier Selenium articles on TechTalkWithVeeresh:
+This post is the 2026 refresh that connects to four earlier Selenium articles on techtalkwith-veeresh:
 
 | Earlier post | What it covered | What changed by 2026 |
 |---|---|---|
